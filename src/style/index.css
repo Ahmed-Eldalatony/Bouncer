@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family:'Metropolis';
+  src: url(/public/fonts/Metropolis-Light.woff);
+  font-weight: 300 ;
+}
+@font-face {
+  font-family:'Metropolis';
+  src: url(/public/fonts/Metropolis-Regular.woff);
+  font-weight: 400 ;
+}
+@font-face {
+  font-family:'Metropolis';
+  src: url(/public/fonts/Metropolis-Medium.woff);
+  font-weight: 500 ;
+}
+@font-face {
+  font-family:'Metropolis';
+  src: url(/public/fonts/Metropolis-SemiBold.woff);
+  font-weight: 600 ;
+}
+@font-face {
+  font-family:'Metropolis';
+  src: url(/public/fonts/Metropolis-Bold.woff);
+  font-weight: 700 ;
+}
+@font-face {
+  font-family:'Metropolis';
+  src: url(/public/fonts/Metropolis-ExtraBold.woff);
+  font-weight: 800 ;
+}
+@font-face {
+  font-family:'Metropolis';
+  src: url(/public/fonts/Metropolis-Black.woff);
+  font-weight: 900 ;
+}
+select.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+
+  body{
+    font-family: 'Metropolis','Montserrat', sans-serif;
+    font-weight: 400;
+  }
+  /* h1{
+    font-family: 'Metropolis',serif;
+  } */
+
+  li a:active, 
+  li a:hover {
+@apply  text-primary 
+  }
+  li{
+    @apply py-2 px-5
+  }
+  .gradient{
+    /* background-image: linear-gradient(to right, #FF4858, #8F65FF); */
+  
+  }
+  .popup-card-1{
+    background-image: url('/public/imgs/iphone6.png') ;
+    background-position-x:135px;
+    background-position-y:30px;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+  }
+  .popup-card-3{
+    background-image: url('/public/imgs/camera.png') ;
+    background-position-x:210px;
+    background-position-y:95px;
+    background-size: 12rem;
+    background-repeat: no-repeat;
+
+  }
+.sudo-el::before{
+    @apply  w-0 h-1  left-0 content-[""]   bg-primary
+    absolute bottom-[-1px] transition-all duration-200 
+  }
+  
+/* .App{
+  width: 1100px;
+  margin: 0 auto;
+} */
